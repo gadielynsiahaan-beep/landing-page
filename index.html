@@ -3,53 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <title>My Profile</title>
-
-    <!-- PASTIKAN FILE NYA ADA DI FOLDER YANG SAMA -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- NAVBAR -->
     <nav class="navbar">
         <h2 class="logo">MyProfile</h2>
         <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
         </ul>
     </nav>
 
-    <header class="hero">
-        <h1>Hi, I'm Gadielyn Siahaan👋</h1>
-        <p>Finance • Account Receivable Specialist</p>
+    <!-- HERO -->
+    <header class="hero" id="home">
+        <div class="hero-text">
+            <h1>Hi, I'm Gadielyn Siahaan 👋</h1>
+            <p>Finance • Account Receivable</p>
+            <a href="#about" class="btn">Kenali saya lebih lanjut</a>
+        </div>
     </header>
 
+    <!-- MAIN -->
     <main>
 
-        <section class="profile">
-            <img src="profile.jpg" alt="Foto">
-            <div>
+        <!-- PROFILE -->
+        <section class="profile" id="about">
+
+            <div class="profile-img">
+                <img src="profile.jpg" alt="Foto Profil">
+            </div>
+
+            <div class="profile-text">
                 <h2>About Me</h2>
                 <p>
-                    Saya bekerja di bidang Finance dengan fokus pada Account Receivable. 
-                    Saya bertanggung jawab dalam mengelola piutang perusahaan, memastikan pembayaran dari pelanggan berjalan tepat waktu, 
-                    serta melakukan pencatatan dan pelaporan keuangan secara akurat.
-                    
-                    Selain itu, saya juga terbiasa membuat invoice, mengirimkan invoice kepada pelanggan, melakukan update data transaksi, 
-                    mengelola dan memperbarui resi pengiriman, serta mengecek data permintaan (request) secara teliti. 
-                    Saya memiliki kemampuan analisis yang baik, teliti, dan terorganisir dalam mengelola data keuangan.
+                    Saya bekerja di bidang Finance, khususnya Account Receivable. 
+                    Saya terbiasa mengelola piutang, membuat dan mengirim invoice, 
+                    serta memastikan pembayaran berjalan dengan baik. 
+                    Selain itu, saya juga melakukan update data, mengelola resi pengiriman, 
+                    dan mengecek data request secara teliti.
                 </p>
-            </div>
-        </section>
 
-        <section class="info">
-            <h2>Contact Me</h2>
-            <p>✉️ Email: gadielynsiahaan@email.com</p>
-            <p>📱 Instagram: @gsps_diel</p>
-            <p>📞 Phone: 085268019012</p>
+                <div class="contact-box">
+                    <p>✉️ gadielyn@email.com</p>
+                    <p>📱 @gsps_diel</p>
+                    <p>📞 08xxxxxxxx</p>
+                </div>
+            </div>
+
         </section>
 
     </main>
+
+    <!-- FOOTER -->
     <footer>
-        <p>© 2026 Gadielyn</p>
+        <p>© 2026 Gadielyn Siahaan</p>
     </footer>
 
 </body>
